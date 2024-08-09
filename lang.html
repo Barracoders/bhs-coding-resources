@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BHS Coding Resources</title>
+    <ul>
+      <li><a href="https://bhs-coding-resources.glitch.me/">Home</a></li>
+      
+      <li>
+        <a href="https://bhs-coding-resources.glitch.me/lang.html">Languages</a>
+      </li>
+      <li style="float: right">
+        <a href="https://bhs-coding-resources.glitch.me/about.html">About</a>
+      </li>
+    </ul>
+    <link rel="stylesheet" href="style.css" />
+    <div class="funnybutton">
+      <img
+        src="https://www-bhs.stjohns.k12.fl.us/wp-content/uploads/2023/01/BHS-InfoTech-logo.png"
+        alt="I.T. Logo"
+      />
+    </div>
+    <style>
+      .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      .tab button:hover {
+        background-color: #ddd;
+      }
+
+      .tab button.active {
+        background-color: #ccc;
+      }
+
+      .tabcontent {
+        display: none;
+        padding: 6px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Programing Languages</h3>
+    <p>
+      Click on the buttons inside the tabbed menu to view information about
+      different Programming Languages:
+    </p>
+
+    <div class="tab">
+      <button class="tablinks" onclick="openCity(event, 'HTML/CSS')">
+        HTML/CSS
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Javascript')">
+        Javascript
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'C++')">C++</button>
+      <button class="tablinks" onclick="openCity(event, 'Swift')">Swift</button>
+      <button class="tablinks" onclick="openCity(event, 'Python')">
+        Python
+      </button>
+      <button class="tablinks" onclick="openCity(event, 'Lua')">Lua</button>
+      <button class="tablinks" onclick="openCity(event, 'SQL')">SQL</button>
+    </div>
+
+    <div id="HTML/CSS" class="tabcontent">
+      <h3>HTML/CSS</h3>
+      <p>
+        HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets) are
+        two fundamental technologies used to create and style websites. They
+        work hand in hand to define the structure and appearance of web pages.
+        <br /><br />
+        HTML is a markup language used for creating the basic structure and
+        content of web pages. It consists of a series of elements or tags
+        enclosed in angle brackets. These tags define the different parts of a
+        web page such as headings, paragraphs, links, images, tables, forms, and
+        more. HTML elements are structured to create a hierarchical
+        representation of the web page's content.
+        <br /><br />
+        For example, the following HTML code represents a simple web page
+        structure with a heading, paragraph, and an image:
+        <br /><br />
+        ```<br />
+        &#60;!DOCTYPE html&#62;<br />
+        &#8195;&#60;html&#62;<br />
+        &#8195;&#8195;&#60;head&#62;<br />
+        &#8195;&#8195;&#8195; &#60;title&#62;My First Web
+        Page&#60;/title&#62;<br />
+        &#8195;&#8195; &#60;/head&#62;<br />
+        &#8195;&#8195; &#60;body&#62;<br />
+        &#8195;&#8195;&#8195; &#60;h1&#62;Welcome to My Website!&#60;/h1&#62;<br />
+        &#8195;&#8195;&#8195;&#60;p&#62;This is a sample
+        paragraph.&#60;/p&#62;<br />
+        &#8195;&#8195;&#8195; &#60;img src="image.jpg" alt="Sample
+        Image"&#62;<br />
+        &#8195;&#8195; &#60;/body&#62;<br />
+        &#8195;&#60;/html&#62;<br />
+        ```<br /><br />
+
+        CSS, on the other hand, is a style sheet language used to describe the
+        presentation or visual appearance of a web document written in HTML. It
+        defines how the HTML elements should be displayed, including attributes
+        like color, font, layout, and more. CSS allows you to separate the
+        structure from the presentation, making it easier to manage the look and
+        feel of a website.
+        <br /><br />
+        CSS selectors select HTML elements based on their tags, classes, IDs,
+        attributes, and other properties. Using these selectors, you can apply
+        styles to specific elements individually or even across entire groups of
+        elements.
+        <br /><br />
+        Heres an example of CSS code that changes the color and font of the
+        heading and paragraph from the previous HTML example:
+        <br /><br />
+        ```css<br />
+        h1 {<br />
+        &#8195;color: blue;<br />
+        &#8195;font-family: Arial, sans-serif;<br />
+        }<br />
+        <br />
+        p {<br />
+        &#8195;color: green;<br />
+        &#8195;font-family: Verdana, sans-serif;<br />
+        }<br />
+        ```
+        <br /><br />
+        By linking the CSS file to the HTML document using the `&#60;link&#62;`
+        tag or by defining CSS styles directly within the HTML file using the
+        `&#60;style&#62;` tag, the styles will be applied to the respective HTML
+        elements.
+        <br /><br />
+        HTML and CSS both have extensive specifications and features beyond the
+        basics mentioned here. They form the foundation of web design and
+        development and are essential skills for creating visually appealing and
+        structurally sound websites.
+      </p>
+    </div>
+
+    <div id="Javascript" class="tabcontent">
+      <h3>Javascript</h3>
+      <p>
+        JavaScript is a high-level, interpreted programming language primarily
+        used for front-end web development. It was originally developed by
+        Brendan Eich of Netscape Communications in 1995 and quickly gained
+        popularity due to its ability to make websites more interactive by
+        adding dynamic content and interactivity.
+        <br /><br />
+        JavaScript is a multi-paradigm language, meaning it supports different
+        programming styles such as procedural, object-oriented, and functional
+        programming. It is often used in conjunction with HTML and CSS to create
+        powerful web applications.
+        <br /><br />
+        Here are some key features and aspects of JavaScript:
+        <br /><br />
+        1. Syntax: JavaScript syntax is similar to other programming languages
+        like C and Java, making it relatively easy to learn and understand.
+        <br /><br />
+        2. Interactivity: It allows for the creation of interactive elements on
+        webpages by enabling user input handling, event handling, and DOM
+        manipulation.
+        <br /><br />
+        3. Cross-platform compatibility: JavaScript can run on any platform or
+        operating system as it is executed by the web browser.
+        <br /><br />
+        4. Client-side scripting: It runs on the client-side, meaning it is
+        executed by the user's web browser rather than the web server. This
+        allows for dynamic updates without requiring a page refresh.
+        <br /><br />
+        5. Frameworks and Libraries: JavaScript has a vast ecosystem of
+        frameworks and libraries such as React, Angular, and Vue.js, which
+        provide additional functionalities and ease the development process.
+        <br /><br />
+        6. Asychronous programming: JavaScript supports asynchronous programming
+        using concepts like promises and async/await, allowing for non-blocking
+        operations and smooth user experiences.
+        <br /><br />
+        7. APIs: It offers access to various APIs, enabling developers to
+        interact with different functionalities, like manipulating audio/video,
+        accessing geolocation, and using local storage.
+        <br /><br />
+        8. Object-oriented programming: JavaScript supports object-oriented
+        programming concepts, allowing for the creation of reusable code through
+        the use of objects, classes, and inheritance.
+        <br /><br />
+        9. Server-side development: While originally designed for client-side
+        scripting, JavaScript is now also used for server-side development with
+        frameworks like Node.js. It allows for building scalable and efficient
+        back-end applications.
+        <br /><br />
+        Overall, JavaScript is a versatile and essential programming language
+        for web development, powering many aspects of modern web applications
+        and providing developers with a wide range of tools and capabilities to
+        create interactive and dynamic experiences for users.
+      </p>
+    </div>
+
+    <div id="C++" class="tabcontent">
+      <h3>C++</h3>
+      <p>
+        C++ is a widely used and versatile programming language created by
+        Bjarne Stroustrup in the late 1970s as an extension of the C programming
+        language. It is known for its efficiency, low-level control, and support
+        for object-oriented programming. C++ is used in various domains,
+        including system programming, game development, software engineering,
+        and embedded systems.
+        <br /><br />
+        Here are some key features and aspects of C++:
+        <br /><br />
+        1. Object-oriented programming (OOP): C++ supports the OOP paradigm,
+        allowing for the creation of classes, objects, and encapsulation. It
+        provides features like inheritance, polymorphism, and data abstraction,
+        enabling the development of modular and reusable code.
+        <br /><br />
+        2. Efficiency and performance: C++ provides low-level access to memory
+        and hardware resources, making it suitable for performance-critical
+        applications. It allows manual memory management through concepts like
+        pointers, which can be advantageous when working with
+        resource-constrained systems or in scenarios requiring fine-grained
+        control.
+        <br /><br />
+        3. Standard Template Library (STL): C++ includes the STL, a powerful
+        library with containers (such as vectors, lists, and maps), algorithms
+        (sorting, searching, etc.), and iterators. The STL offers a rich set of
+        tools that can simplify and speed up development.
+        <br /><br />
+        4. Strong type system: C++ has a strong static type system, meaning
+        variables must be declared with their types, and type-checking is done
+        at compile-time. This helps catch errors early and enhances code
+        reliability.
+        <br /><br />
+        5. Multiple paradigms: C++ supports multiple programming paradigms,
+        including procedural, object-oriented, and generic programming. It
+        allows for both low-level control and high-level abstractions, offering
+        flexibility to match the needs of different projects.
+        <br /><br />
+        6. Compatibility with C: C++ is backward compatible with C, allowing C
+        code to be easily integrated and utilized within C++ programs. It also
+        provides additional features such as function overloading, namespaces,
+        and references.
+        <br /><br />
+        7. Exception handling: C++ includes exception handling mechanisms that
+        allow developers to handle and recover from runtime errors, improving
+        code robustness.
+        <br /><br />
+        8. Standardization: C++ is governed by a standardization committee that
+        continuously works on evolving and enhancing the language. The most
+        recent standard is C++20, which introduced numerous new features and
+        improvements.
+        <br /><br />
+        9. IDE and tooling support: C++ has excellent support from various
+        Integrated Development Environments (IDEs), debuggers, and build
+        systems, making it easier to develop, test, and debug code.
+        <br /><br />
+        10. Portable and widely used: C++ programs can be compiled and executed
+        on various platforms, including Windows, macOS, Linux, and embedded
+        systems. It is widely adopted in industries like finance, gaming,
+        telecommunications, and embedded systems development.
+        <br /><br />
+        C++ is a powerful programming language that combines low-level control
+        with high-level abstractions, giving developers the ability to write
+        efficient, performant, and reliable code. Its flexibility, extensive
+        libraries, and broad industry adoption make it a popular choice for a
+        wide range of applications.
+      </p>
+    </div>
+
+    <div id="Swift" class="tabcontent">
+      <h3>Swift</h3>
+      <p>
+        Swift is a modern and powerful programming language developed by Apple
+        Inc. It was introduced in 2014 as a replacement for Objective-C and is
+        primarily used for developing applications for Apple platforms such as
+        iOS, macOS, watchOS, and tvOS. Swift combines high-performance
+        capabilities with a clean and expressive syntax, making it both
+        efficient and developer-friendly.
+        <br /><br />
+        Here are some key features and aspects of Swift:
+        <br /><br />
+        1. Safety and conciseness: Swift focuses on safety and simplicity. It
+        includes features like type inference, optionals, and automatic memory
+        management (using Automatic Reference Counting - ARC) to prevent common
+        programming errors and enhance code reliability. It also has a concise,
+        expressive syntax that reduces boilerplate code.
+        <br /><br />
+        2. Fast and efficient: Swift is designed to deliver high-performance
+        code. It achieves this through various optimizations such as built-in
+        support for concurrency, advanced control flow, and direct memory
+        access.
+        <br /><br />
+        3. Object-oriented and protocol-oriented: Swift supports both
+        object-oriented programming (OOP) and protocol-oriented programming
+        (POP). It provides classes, inheritance, encapsulation, and
+        polymorphism, as well as protocols and protocol extensions, enabling
+        code reuse and modularity.
+        <br /><br />
+        4. Interoperability with Objective-C: Swift is built to be compatible
+        with existing Objective-C code. It can work seamlessly with Objective-C
+        frameworks and libraries. Developers can even use both languages within
+        the same project, making it easy to migrate existing Objective-C
+        projects to Swift incrementally.
+        <br /><br />
+        5. Powerful standard library: Swift includes a rich set of standard
+        libraries that provide commonly used functionalities. It covers a broad
+        range of areas like string manipulation, collection types, networking,
+        file management, and more, reducing the need for external dependencies.
+        <br /><br />
+        6. Playgrounds: Playgrounds in Xcode provide an interactive environment
+        for experimenting with Swift code. Developers can see results and
+        visualizations in real-time, aiding in quick prototyping and learning.
+        <br /><br />
+        7. Open source and community-driven: In 2015, Swift was open-sourced,
+        enabling developers to contribute, enhance, and port it to different
+        platforms. The Swift community has grown rapidly, with numerous
+        frameworks, libraries, and tools being developed by the community,
+        fostering an active and collaborative ecosystem.
+        <br /><br />
+        8. Multi-platform support: While Swift was initially created for Apple
+        platforms, efforts are underway to enable it to work on other platforms,
+        including Linux. This expansion will allow developers to write Swift
+        code for various environments.
+        <br /><br />
+        9. Apple ecosystem integration: Swift seamlessly integrates with Apple's
+        development tools and frameworks, providing access to native APIs,
+        libraries, and tools like Xcode and Interface Builder. It also supports
+        key technologies like Core Data, Core Animation, and SwiftUI for
+        building robust and visually appealing applications.
+        <br /><br />
+        Swift has gained popularity among developers due to its modern features,
+        safety, and performance. It offers a compelling and productive language
+        for developing applications across the Apple ecosystem, and its
+        open-source nature invites a thriving community that contributes to its
+        growth and evolution.
+      </p>
+    </div>
+    <div id="Python" class="tabcontent">
+      <h3>Python</h3>
+      <p>
+        Python is a high-level, interpreted, and general-purpose programming
+        language created by Guido van Rossum and first released in 1991. It
+        places emphasis on code readability and simplicity, making it suitable
+        for beginners and experienced programmers alike. Python is designed to
+        be easy to learn and write, with a clear and intuitive syntax.
+        <br /><br />
+        Here are some key features and aspects of Python:
+        <br /><br />
+        1. Readability: Python enforces a clean and easily understandable syntax
+        that uses whitespace indentation to delimit code blocks, eliminating the
+        need for explicit braces or semicolons. This promotes code readability
+        and maintainability.
+        <br /><br />
+        2. Dynamic and interpreted: Python is dynamically-typed, meaning
+        variable types are inferred at runtime. It also uses an interpreter to
+        execute code directly, allowing for rapid development and a shorter
+        feedback loop.
+        <br /><br />
+        3. Versatility and extensive libraries: Python has a vast standard
+        library with numerous modules and packages that provide functionalities
+        for tasks like file handling, networking, web development, data
+        analysis, and more. Additionally, Python has a rich ecosystem of
+        third-party libraries, such as NumPy, pandas, Django, Flask, and
+        TensorFlow, which further extend its capabilities.
+        <br /><br />
+        4. Object-oriented and procedural: Python supports both object-oriented
+        programming (OOP) and procedural programming paradigms. It allows the
+        creation of classes, objects, and inheritance, promoting code modularity
+        and reusability. However, Python can also be used purely in a procedural
+        manner.
+        <br /><br />
+        5. Multi-platform support: Python is available and runs on various
+        platforms, including Windows, macOS, Linux, and many more. It offers
+        consistent behavior across different operating systems, making it
+        convenient for cross-platform development.
+        <br /><br />
+        6. Easy integration and extensibility: Python provides seamless
+        integration with other languages like C, C++, and Java. It allows
+        developers to write performance-critical code in other languages and
+        then integrate them into Python programs for increased efficiency.
+        Python also supports various APIs for extension, enabling developers to
+        interface with different systems and services.
+        <br /><br />
+        7. Community and support: Python has a large and active community of
+        developers, which contributes to its continuous improvement and growth.
+        The community provides extensive documentation, tutorials, forums, and
+        package repositories, making it easier for newcomers to get started and
+        get help when needed.
+        <br /><br />
+        8. Data science and machine learning: Python has become one of the most
+        popular languages for data science and machine learning tasks. With
+        libraries like NumPy, pandas, and scikit-learn, developers can
+        efficiently work with and analyze data, build machine learning models,
+        and develop AI applications.
+        <br /><br />
+        9. Web development: Python offers several frameworks for web
+        development, including Django, Flask, and Pyramid. These frameworks
+        simplify the development of web applications, allowing developers to
+        create powerful and scalable web services and websites.
+        <br /><br />
+        10. Automation and scripting: Python's simplicity and readability make
+        it an ideal language for automation and scripting tasks. It is widely
+        used for scripting repetitive tasks, system administration, and building
+        command-line tools.
+        <br /><br />
+        Python's combination of simplicity, versatility, and a robust ecosystem
+        of libraries has made it increasingly popular among developers in
+        various fields, including web development, data analysis, scientific
+        computing, and automation. Its ease of use, strong community support,
+        and cross-platform compatibility make it an excellent choice for
+        beginners and professionals alike.
+      </p>
+    </div>
+    <div id="Lua" class="tabcontent">
+      <h3>Lua</h3>
+      <p>
+        Lua is a lightweight, high-level, and powerful scripting language
+        designed primarily for embedded use. It was created in 1993 by a team of
+        researchers at the Pontifical Catholic University of Rio de Janeiro in
+        Brazil. Lua's simplicity, versatility, and extensibility have made it
+        popular in various domains, including game development, embedded
+        systems, scripting, and web development.
+        <br /><br />
+        Here are some key features and aspects of Lua:
+        <br /><br />
+        1. Embedded scripting language: Lua was designed to be embedded into
+        existing applications and systems as a scripting language. It has a
+        small and efficient footprint, making it suitable for
+        resource-constrained environments.
+        <br /><br />
+        2. Lightweight and fast: Lua is highly optimized and has a minimal
+        overhead, leading to fast execution times and efficient memory usage.
+        This characteristic makes it a favorable choice for performance-critical
+        applications and real-time systems.
+        <br /><br />
+        3. Simple and readable syntax: Lua features a clean, minimalistic syntax
+        that is easy to learn and read. It uses tables as a fundamental data
+        structure and provides a simple yet expressive set of control
+        structures.
+        <br /><br />
+        4. Dynamic typing: Like Python, Lua is a dynamically-typed language,
+        meaning that variables do not require explicit type declarations. Types
+        are determined at runtime, allowing for flexibility and rapid
+        prototyping.
+        <br /><br />
+        5. Extensibility and embeddability: Lua is designed to be easily
+        extended with C/C++ code, allowing developers to create custom modules
+        and add functionality to existing applications. It provides a simple API
+        for integrating Lua into C/C++ codebases, facilitating seamless
+        communication between Lua and the host application.
+        <br /><br />
+        6. Portability: Lua is highly portable and runs on various platforms,
+        including Windows, macOS, Linux, and embedded systems. It provides a
+        consistent behavior across different platforms, making it suitable for
+        cross-platform development.
+        <br /><br />
+        7. Powerful and flexible: Lua supports a wide range of programming
+        paradigms, including procedural, object-oriented, and functional
+        programming styles. It offers features such as lexical scoping,
+        coroutines for cooperative multitasking, first-class functions, and
+        metatables that allow for advanced customization and powerful
+        abstractions.
+        <br /><br />
+        8. Lua ecosystem: Lua has an active and dedicated community that
+        continuously develops and maintains a variety of libraries and
+        frameworks. These community-contributed packages extend Lua's
+        functionality in areas like networking, GUI development, game
+        development, web development, and more.
+        <br /><br />
+        9. Game development: Lua is widely used as a scripting language in the
+        game development industry. Many game engines, including Unity, Corona
+        SDK, and CryEngine, provide Lua as a scripting option. Its simplicity
+        and performance make it well-suited for game logic scripting.
+        <br /><br />
+        10. Scripting and automation: Lua is also popular as a general-purpose
+        scripting language. Its small size, minimal runtime requirements, and
+        ease of use make it suitable for scripting tasks, automation, and
+        extending applications with a scripting layer.
+        <br /><br />
+        Lua's combination of simplicity, efficiency, and extensibility has made
+        it a popular choice for a wide range of applications. Its compact size,
+        dynamic typing, and cross-platform compatibility make it a valuable tool
+        for embedded systems, game development, scripting, and more. It
+        continues to evolve and gain support from developers worldwide,
+        contributing to its versatility and widespread usage.
+      </p>
+    </div>
+    <div id="SQL" class="tabcontent">
+      <h3>SQL</h3>
+      <p>
+        SQL (Structured Query Language) is a standard programming language
+        specifically designed for managing and manipulating relational
+        databases. It was developed in the 1970s and has since become a crucial
+        tool for working with data in a wide range of applications.
+        <br /><br />
+        Here are some key aspects and features of SQL:
+        <br /><br />
+        1. Relational database management: SQL is used to interact with
+        relational database management systems (RDBMS). RDBMS store data in
+        tables with relationships defined between them, allowing for efficient
+        and structured data management.
+        <br /><br />
+        2. Data querying and manipulation: SQL provides a set of commands that
+        allow users to query the database and retrieve specific data based on
+        conditions, filter results, and perform calculations. It enables data
+        manipulation operations such as inserting, updating, and deleting
+        records.
+        <br /><br />
+        3. Data definition: SQL's Data Definition Language (DDL) allows the
+        definition, modification, and organization of database objects like
+        tables, views, indexes, and constraints. DDL statements are used to
+        create, alter, and drop database structures.
+        <br /><br />
+        4. Data manipulation: SQL's Data Manipulation Language (DML) provides
+        statements for manipulating data within the database. INSERT, UPDATE,
+        and DELETE statements are used to modify existing records or add new
+        ones.
+        <br /><br />
+        5. Data retrieval: SQL's SELECT statement is used to retrieve data from
+        tables based on specified conditions. The SELECT statement supports
+        various clauses such as WHERE, GROUP BY, HAVING, and ORDER BY, allowing
+        for complex and customized data retrieval.
+        <br /><br />
+        6. Data integrity and constraints: SQL supports the definition of
+        constraints to enforce data integrity rules within the database.
+        Constraints can ensure data validity, uniqueness, referential integrity,
+        and other rules that maintain the integrity of the data.
+        <br /><br />
+        7. Joins and relationships: SQL allows for joining tables based on
+        common columns or relationships defined between them. Joins enable
+        combining data from multiple tables, making it possible to retrieve
+        related data for analysis and reporting.
+        <br /><br />
+        8. Transactions: SQL supports transactions that help maintain the
+        consistency and integrity of data within the database. Transactions
+        allow for executing multiple database operations as a single logical
+        unit, ensuring that all changes are either committed or rolled back in
+        case of failures.
+        <br /><br />
+        9. SQL standards: SQL is based on standardized syntax defined by the
+        American National Standards Institute (ANSI) and the International
+        Organization for Standardization (ISO). Although many variations and
+        dialects of SQL exist, most comply with ANSI/ISO standards to ensure
+        portability and interoperability across different database systems.
+        <br /><br />
+        10. Widely-used database language: SQL is widely adopted and supported
+        by virtually all major relational database systems, including Oracle,
+        MySQL, PostgreSQL, Microsoft SQL Server, SQLite, and others. It is a
+        fundamental skill for anyone working with data and databases, from
+        developers and data analysts to database administrators.
+        <br /><br />
+        SQL's simplicity, reliability, and widespread adoption have made it a
+        fundamental language for managing and manipulating databases. With SQL,
+        users can define database structures, query and retrieve data, modify
+        data, and ensure data integrity. Its intuitive syntax and broad support
+        across various database systems make it a powerful tool for working with
+        structured data.
+      </p>
+    </div>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
+    <h6>Made By <a href="https://i-suck-at-most-stuff.glitch.me/">Josh Worthington</a>, Hosted on Glitch</h6>
+  </body>
+</html>
